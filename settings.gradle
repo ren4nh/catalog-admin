@@ -1,0 +1,8 @@
+rootProject.name = 'catalog-admin'
+include 'domain'
+include 'application'
+include 'infrastructure'
+include 'domain'
+include 'application'
+include 'infrastructure'
+
