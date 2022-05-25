@@ -1,7 +1,7 @@
 package com.hartwig.catalog.admin.infrastructure.category.persistence;
 
 import com.hartwig.catalog.admin.domain.category.Category;
-import com.hartwig.catalog.admin.infrastructure.MySQLGatewayTest;
+import com.hartwig.catalog.admin.MySQLGatewayTest;
 import org.hibernate.PropertyValueException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
