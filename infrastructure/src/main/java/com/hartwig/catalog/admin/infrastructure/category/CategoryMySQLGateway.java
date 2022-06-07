@@ -3,8 +3,8 @@ package com.hartwig.catalog.admin.infrastructure.category;
 import com.hartwig.catalog.admin.domain.category.Category;
 import com.hartwig.catalog.admin.domain.category.CategoryGateway;
 import com.hartwig.catalog.admin.domain.category.CategoryID;
-import com.hartwig.catalog.admin.domain.category.CategorySearchQuery;
 import com.hartwig.catalog.admin.domain.pagination.Pagination;
+import com.hartwig.catalog.admin.domain.pagination.SearchQuery;
 import com.hartwig.catalog.admin.infrastructure.category.persistence.CategoryJpaEntity;
 import com.hartwig.catalog.admin.infrastructure.category.persistence.CategoryRepository;
 import com.hartwig.catalog.admin.infrastructure.utils.SpecificationUtils;
@@ -14,10 +14,6 @@ import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
 import java.util.Optional;
 
 import static com.hartwig.catalog.admin.infrastructure.utils.SpecificationUtils.like;
@@ -55,7 +51,7 @@ public class CategoryMySQLGateway implements CategoryGateway {
     }
 
     @Override
-    public Pagination<Category> findAll(final CategorySearchQuery aQuery) {
+    public Pagination<Category> findAll(final SearchQuery aQuery) {
         final var page = PageRequest.of(
                 aQuery.page(),
                 aQuery.perPage(),
