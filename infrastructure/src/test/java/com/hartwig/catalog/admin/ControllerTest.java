@@ -1,4 +1,4 @@
-package com.hartwig.catalog.admin.infrastructure.category;
+package com.hartwig.catalog.admin;
 
 import com.hartwig.catalog.admin.infrastructure.configuration.ObjectMapperConfig;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -11,7 +11,7 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
-@ActiveProfiles("test")
+@ActiveProfiles("test-integration")
 @WebMvcTest
 @Import(ObjectMapperConfig.class)
 public @interface ControllerTest {

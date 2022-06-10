@@ -1,0 +1,5 @@
+mysql:
+  username: root
+  password: 123456
+  schema: catalog_admin
+  url: localhost:${mysql.port}

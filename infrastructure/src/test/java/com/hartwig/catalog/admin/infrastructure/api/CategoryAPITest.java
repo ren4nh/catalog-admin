@@ -1,4 +1,4 @@
-package com.hartwig.catalog.admin.infrastructure.category.api;
+package com.hartwig.catalog.admin.infrastructure.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hartwig.catalog.admin.application.category.create.CreateCategoryOutput;
@@ -17,7 +17,7 @@ import com.hartwig.catalog.admin.domain.exceptions.NotFoundException;
 import com.hartwig.catalog.admin.domain.pagination.Pagination;
 import com.hartwig.catalog.admin.domain.validation.handler.Notification;
 import com.hartwig.catalog.admin.infrastructure.api.CategoryAPI;
-import com.hartwig.catalog.admin.infrastructure.category.ControllerTest;
+import com.hartwig.catalog.admin.ControllerTest;
 import com.hartwig.catalog.admin.infrastructure.category.models.CreateCategoryRequest;
 import com.hartwig.catalog.admin.infrastructure.category.models.UpdateCategoryRequest;
 import com.hartwig.catalog.admin.domain.validation.Error;
